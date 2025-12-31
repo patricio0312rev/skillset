@@ -76,35 +76,18 @@ skillset init \
 
 ## Available Domains
 
-### 🔧 Foundation (11 skills)
-Project setup, development environment, and documentation
-
-### 🎨 Frontend (10 skills)
-React, UI components, and user experience
-
-### ⚙️ Backend (10 skills)
-APIs, authentication, and server-side logic
-
-### 🤖 AI Engineering (10 skills)
-LLMs, RAG, agents, and AI systems
-
-### 🏗️ Architecture (10 skills)
-System design, scalability, and technical decisions
-
-### 🔄 CI/CD (10 skills)
-Automation, deployments, and release management
-
-### 💾 Database Management (10 skills)
-Migrations, optimization, and data engineering
-
-### 🧪 Testing (10 skills)
-Quality assurance and test coverage
-
-### 🔒 Security (10 skills)
-Security hardening and privacy protection
-
-### 📊 Performance (10 skills)
-Observability, monitoring, and optimization
+| Domain | Skills | Description |
+|--------|--------|-------------|
+| 🔧 Foundation | 11 | Project setup, development environment, and documentation |
+| 🎨 Frontend | 10 | React, UI components, and user experience |
+| ⚙️ Backend | 10 | APIs, authentication, and server-side logic |
+| 🤖 AI Engineering | 10 | LLMs, RAG, agents, and AI systems |
+| 🏗️ Architecture | 10 | System design, scalability, and technical decisions |
+| 🔄 CI/CD | 10 | Automation, deployments, and release management |
+| 💾 Database Management | 10 | Migrations, optimization, and data engineering |
+| 🧪 Testing | 10 | Quality assurance and test coverage |
+| 🔒 Security | 10 | Security hardening and privacy protection |
+| 📊 Performance | 10 | Observability, monitoring, and optimization |
 
 ## Tool-Specific Configurations
 
