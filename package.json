@@ -1,0 +1,55 @@
+{
+  "name": "@patricio0312rev/skillset",
+  "displayName": "Skillset",
+  "version": "0.1.0",
+  "description": "CLI tool to import production-ready development skills for Claude Code, Cursor, GitHub Copilot, and other AI coding assistants",
+  "main": "src/index.js",
+  "bin": {
+    "skillset": "./bin/cli.js",
+    "ss": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "echo 'Ready to publish skillset!'"
+  },
+  "keywords": [
+    "ai",
+    "skills",
+    "claude",
+    "cursor",
+    "copilot",
+    "claude-code",
+    "ai-skills",
+    "cli",
+    "scaffolding",
+    "development-skills",
+    "ai-tools",
+    "skillset",
+    "agent-skills"
+  ],
+  "author": "Patricio Marroquin <patricio0312rev@github>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patricio0312rev/skillset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patricio0312rev/skillset/issues"
+  },
+  "homepage": "https://github.com/patricio0312rev/skillset#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  }
+}
