@@ -123,7 +123,9 @@ async function generateSkillFile(domain, skill, domainDir, config) {
     await fs.ensureDir(targetSkillDir);
 
     // Check if template exists
-    if (await fs.pathExists(sourceFile)) {
+    const templateExists = await fs.pathExists(sourceFile);
+
+    if (templateExists) {
       let content = await fs.readFile(sourceFile, "utf8");
 
       // Process content based on tool (e.g., rename SKILL.md to RULE.md for Cursor)
@@ -150,11 +152,22 @@ async function generateSkillFile(domain, skill, domainDir, config) {
 
       return targetFile;
     } else {
-      console.warn(`Warning: Template not found for ${domain}/${skill}`);
-      return null;
+      console.warn(`⚠️  Warning: Template not found for ${domain}/${skill}`);
+      console.warn(`    Expected at: ${sourceFile}`);
+      console.warn(`    Creating placeholder skill file...`);
+
+      // Create a basic placeholder so the folder isn't empty
+      const placeholderContent = `# ${skill}\n\nThis skill template is not yet available.\n\nDomain: ${domain}`;
+      await fs.writeFile(targetFile, placeholderContent);
+      console.log(`  ✓ Created placeholder file: ${targetFile}`);
+
+      return targetFile;
     }
   } catch (error) {
-    console.error(`Error generating skill ${skill}:`, error.message);
+    console.error(`❌ Error generating skill ${skill}:`, error.message);
+    console.error(`   Source: ${sourceFile}`);
+    console.error(`   Target: ${targetFile}`);
+    console.error(`   Full error:`, error);
     return null;
   }
 }
