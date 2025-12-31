@@ -1,0 +1,39 @@
+# Development files
+.git
+.github
+.vscode
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Documentation (except main README)
+docs/
+examples/
+
+# Build files
+.cache
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea
+*.swp
+*.swo
+*~
+
+# Misc
+coverage/
+.nyc_output/
