@@ -112,7 +112,12 @@ async function generateSkillFile(domain, skill, domainDir, config) {
     domain,
     skill
   );
-  const sourceFile = path.join(sourceDir, " SKILL.md");
+
+  let sourceFile = path.join(sourceDir, "SKILL.md");
+
+  if (!await fs.pathExists(sourceFile)) {
+    sourceFile = path.join(sourceDir, " SKILL.md");
+  }
 
   // Target file with appropriate extension
   const targetSkillDir = path.join(domainDir, skill);
