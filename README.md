@@ -2,13 +2,14 @@
 
 **Import production-ready development skills for Claude Code, Cursor, GitHub Copilot, and other AI coding assistants**
 
-SkillSet is a CLI tool that helps you quickly import and configure development skills from a comprehensive library of 100+ production-ready skills covering every aspect of modern software engineering.
+SkillSet is a CLI tool that helps you quickly import and configure development skills from a comprehensive library of 155+ production-ready skills covering every aspect of modern software engineering.
 
 ## Features
 
-- **100+ Production-Ready Skills** - From project setup to deployment, security to AI engineering
+- **155+ Production-Ready Skills** - From project setup to deployment, security to AI engineering
 - **Multi-Tool Support** - Works with Claude Code, Cursor, GitHub Copilot, and more
 - **10 Specialized Domains** - Foundation, Frontend, Backend, AI Engineering, Architecture, CI/CD, Database, Testing, Security, Performance
+- **Search & Browse** - Find skills by name or browse by domain
 - **Interactive CLI** - Easy-to-use interface for selecting and importing skills
 - **Programmatic API** - Use SkillSet in your own tools and scripts
 
@@ -47,6 +48,21 @@ The interactive CLI will guide you through:
 3. **Pick domains** - Select from 10 specialized domains
 4. **Select skills** - Choose specific skills from each domain
 
+### Search for Skills
+
+```bash
+skillset search api          # Find all API-related skills
+skillset search mcp --grouped # Group results by domain
+```
+
+### Browse All Skills
+
+```bash
+skillset list                    # Show all 155+ skills
+skillset list --compact          # Show only domain summaries
+skillset list --domain testing   # Filter by domain
+```
+
 ## Usage Examples
 
 ### Interactive Mode (Default)
@@ -78,16 +94,16 @@ skillset init \
 
 | Domain | Skills | Description |
 |--------|--------|-------------|
-| 🔧 Foundation | 11 | Project setup, development environment, and documentation |
-| 🎨 Frontend | 10 | React, UI components, and user experience |
-| ⚙️ Backend | 10 | APIs, authentication, and server-side logic |
-| 🤖 AI Engineering | 10 | LLMs, RAG, agents, and AI systems |
+| 🔧 Foundation | 23 | Project setup, development environment, and documentation |
+| 🎨 Frontend | 19 | React, UI components, and user experience |
+| ⚙️ Backend | 16 | APIs, authentication, and server-side logic |
+| 🤖 AI Engineering | 16 | LLMs, RAG, agents, and AI systems |
 | 🏗️ Architecture | 10 | System design, scalability, and technical decisions |
-| 🔄 CI/CD | 10 | Automation, deployments, and release management |
+| 🔄 CI/CD | 14 | Automation, deployments, and release management |
 | 💾 Database Management | 10 | Migrations, optimization, and data engineering |
-| 🧪 Testing | 10 | Quality assurance and test coverage |
-| 🔒 Security | 10 | Security hardening and privacy protection |
-| 📊 Performance | 10 | Observability, monitoring, and optimization |
+| 🧪 Testing | 22 | Quality assurance and test coverage |
+| 🔒 Security | 14 | Security hardening and privacy protection |
+| 📊 Performance | 11 | Observability, monitoring, and optimization |
 
 ## Tool-Specific Configurations
 
@@ -137,19 +153,29 @@ const backendSkills = skillset.getSkillsForDomain('backend');
 console.log(backendSkills);
 ```
 
-## CLI Options
+## CLI Commands
 
 ```bash
+# Initialize skills in your project
 skillset init [options]
-
-Options:
   -t, --tool <tool>        AI tool (claude-code, cursor, copilot, other)
   -f, --folder <name>      Custom folder name
   -d, --domains <list>     Comma-separated list of domains
   --skills <list>          Comma-separated list of specific skills
   --skip-prompts           Skip all interactive prompts (requires all flags)
-  -h, --help              Display help for command
-  -V, --version           Output the version number
+
+# Search for skills by name
+skillset search <query> [options]
+  -g, --grouped            Group results by domain
+
+# List all available skills
+skillset list [options]
+  -d, --domain <name>      Filter by domain
+  -c, --compact            Show only domain names
+
+# General options
+  -h, --help               Display help for command
+  -V, --version            Output the version number
 ```
 
 ## Contributing
@@ -158,7 +184,7 @@ Contributions are welcome! Please check out the [contribution guidelines](https:
 
 ## Related Projects
 
-- [Skills Collection](https://github.com/patricio0312rev/skills) - The complete library of 100+ skills
+- [Skills Collection](https://github.com/patricio0312rev/skills) - The complete library of 155+ skills
 - [AgentKit](https://github.com/patricio0312rev/agentkit) - Scaffold AI agent configurations
 
 ## License
