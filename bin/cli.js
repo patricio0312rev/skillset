@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const { program } = require("commander");
-const chalk = require("chalk");
 const packageJson = require("../package.json");
 const { displayBanner } = require("../src/utils/display");
 const initCommand = require("../src/commands/init");
