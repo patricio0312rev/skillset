@@ -13,22 +13,25 @@ async function generateToolSpecificFiles(config, targetDir, skillsList) {
   const files = [];
 
   switch (config.tool) {
-    case 'cursor':
+    case 'cursor': {
       const cursorFiles = await generateCursorFiles(config, targetDir, skillsList);
       files.push(...cursorFiles);
       break;
+    }
 
-    case 'copilot':
+    case 'copilot': {
       const copilotFiles = await generateCopilotFiles(config, targetDir, skillsList);
       files.push(...copilotFiles);
       break;
+    }
 
     case 'claude-code':
-    case 'other':
+    case 'other': {
       // These use the multi-file structure as-is
       const indexFile = await generateIndexFile(config, targetDir, skillsList);
       if (indexFile) files.push(indexFile);
       break;
+    }
   }
 
   return files;
@@ -217,7 +220,7 @@ For specific guidance on any aspect of development, refer to the detailed skill 
 
 \`\`\`
 ${config.folder}/
-${skillsList.map(({ domain, skill }) => `  ${skill}/SKILL.md`).join('\n')}
+${skillsList.map(({ skill }) => `  ${skill}/SKILL.md`).join('\n')}
 \`\`\`
 
 ---

@@ -49,7 +49,7 @@ function searchCommand(query, options) {
       grouped[result.domain].skills.push(result.skill);
     }
 
-    for (const [domain, info] of Object.entries(grouped)) {
+    for (const [_domain, info] of Object.entries(grouped)) {
       console.log(chalk.bold.blue(`  ${info.name}`));
       for (const skill of info.skills) {
         const highlighted = highlightMatch(skill, searchTerm);

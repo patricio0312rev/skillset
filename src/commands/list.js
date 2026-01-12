@@ -27,7 +27,7 @@ function listCommand(options) {
     return;
   }
 
-  for (const [domainKey, domainInfo] of Object.entries(domainsToShow)) {
+  for (const [_domainKey, domainInfo] of Object.entries(domainsToShow)) {
     const skillCount = domainInfo.skills.length;
     console.log(
       chalk.bold.blue(`  ${domainInfo.name}`) +
