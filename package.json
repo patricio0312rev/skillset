@@ -10,8 +10,9 @@
   },
   "scripts": {
     "start": "node bin/cli.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "echo 'Ready to publish skillset!'"
+    "test": "node bin/cli.js --version && node bin/cli.js list --compact && node bin/cli.js search test",
+    "lint": "eslint src bin --fix",
+    "prepublishOnly": "npm run lint && npm test"
   },
   "keywords": [
     "ai",
