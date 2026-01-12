@@ -8,7 +8,6 @@ const { TOOLS, DOMAINS } = require('../lib/config');
  */
 function generateReadme(config, result) {
   const tool = TOOLS[config.tool];
-  const timestamp = new Date().toISOString();
 
   return `# Development Skills Configuration
 
