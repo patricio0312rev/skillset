@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-01-11
+
+### Added
+
+- ESLint configuration for code quality
+- `lint` script for running ESLint with auto-fix
+
+### Fixed
+
+- Fixed `test` and `prepublishOnly` scripts to run proper validation
+- Removed unused imports and variables across codebase
+- Fixed lexical declarations in switch cases
+
 ## [0.2.0] - 2026-01-11
 
 ### Added
@@ -74,6 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **GitHub Copilot Support**: `.github/skills/` or `.claude/skills/` for Agent Skills
 - **Universal Format**: Works with any AI coding assistant
 
+[0.2.1]: https://github.com/patricio0312rev/skillset/releases/tag/v0.2.1
 [0.2.0]: https://github.com/patricio0312rev/skillset/releases/tag/v0.2.0
 [0.1.3]: https://github.com/patricio0312rev/skillset/releases/tag/v0.1.3
 [0.1.2]: https://github.com/patricio0312rev/skillset/releases/tag/v0.1.2
