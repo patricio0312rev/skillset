@@ -38,30 +38,51 @@ const DOMAINS = {
       'changelog-writer',
       'code-formatter-installer',
       'codebase-summarizer',
+      'conventional-commits',
       'dependency-doctor',
       'dev-environment-bootstrapper',
       'dev-onboarding-builder',
       'docs-starter-kit',
+      'eslint-prettier-config',
       'explaining-code',
       'git-hygiene-enforcer',
+      'hot-reload-optimizer',
+      'jsdoc-typescript-docs',
+      'mermaid-diagram-generator',
+      'monorepo-setup',
+      'pr-template-builder',
       'project-scaffolder',
-      'repo-structure-linter'
+      'readme-generator',
+      'repo-structure-linter',
+      'skill-creator',
+      'storybook-setup',
+      'typescript-strict-migrator',
+      'vscode-workspace-setup'
     ]
   },
   frontend: {
     name: 'Frontend',
     description: 'React, UI components, and user experience',
     skills: [
+      'accessibility-auditor',
       'animation-micro-interaction-pack',
       'component-scaffold-generator',
+      'dark-mode-implementer',
       'design-to-component-translator',
       'form-wizard-builder',
+      'framer-motion-animator',
       'frontend-refactor-planner',
       'i18n-frontend-implementer',
       'modal-drawer-system',
       'page-layout-builder',
+      'react-hook-builder',
+      'react-server-components',
+      'responsive-design-system',
       'state-ux-flow-builder',
-      'table-builder'
+      'table-builder',
+      'tailwind-gradient-builder',
+      'tanstack-query-setup',
+      'zustand-state-builder'
     ]
   },
   backend: {
@@ -69,15 +90,21 @@ const DOMAINS = {
     description: 'APIs, authentication, and server-side logic',
     skills: [
       'api-contract-normalizer',
+      'api-docs-generator',
       'api-endpoint-generator',
       'auth-module-builder',
       'background-jobs-designer',
       'caching-strategist',
       'error-handling-standardizer',
+      'event-driven-architect',
+      'graphql-schema-designer',
+      'queue-job-processor',
       'rate-limiting-abuse-protection',
       'rbac-permissions-builder',
+      'rest-to-graphql-migrator',
       'service-layer-extractor',
-      'webhook-receiver-hardener'
+      'webhook-receiver-hardener',
+      'websocket-realtime-builder'
     ]
   },
   'ai-engineering': {
@@ -85,15 +112,21 @@ const DOMAINS = {
     description: 'LLMs, RAG, agents, and AI systems',
     skills: [
       'agent-orchestration-planner',
+      'ai-agent-orchestrator',
       'cost-latency-optimizer',
       'doc-to-vector-dataset-generator',
+      'embedding-pipeline-builder',
       'evaluation-harness',
       'guardrails-safety-filter-builder',
+      'langchain-workflow-builder',
       'llm-debugger',
+      'mcp-server-builder',
       'prompt-regression-tester',
       'prompt-template-builder',
       'rag-pipeline-builder',
-      'tool-function-schema-designer'
+      'structured-output-extractor',
+      'tool-function-schema-designer',
+      'vector-db-setup'
     ]
   },
   architecture: {
@@ -119,13 +152,17 @@ const DOMAINS = {
       'artifact-sbom-publisher',
       'caching-strategy-optimizer',
       'deployment-checklist-generator',
+      'dockerfile-optimizer',
       'github-actions-pipeline-creator',
+      'kubernetes-manifest-generator',
       'monorepo-ci-optimizer',
+      'nginx-config-optimizer',
       'preview-environments-builder',
       'quality-gates-enforcer',
       'release-automation-builder',
       'rollback-workflow-builder',
-      'secrets-env-manager'
+      'secrets-env-manager',
+      'terraform-module-builder'
     ]
   },
   'db-management': {
@@ -148,25 +185,41 @@ const DOMAINS = {
     name: 'Testing',
     description: 'Quality assurance and test coverage',
     skills: [
+      'api-docs-generator',
+      'api-mock-server',
+      'api-test-suite-generator',
+      'bruno-collection-generator',
       'contract-testing-builder',
       'coverage-strategist',
+      'curl-command-generator',
+      'cypress-playwright-setup',
       'e2e-test-builder',
       'flaky-test-detective',
+      'insomnia-collection-generator',
       'integration-test-builder',
+      'load-test-builder',
       'mocking-assistant',
+      'openapi-generator',
+      'postman-collection-generator',
       'snapshot-test-refactorer',
       'test-data-factory-builder',
       'test-reporting-triage-skill',
-      'unit-test-generator'
+      'unit-test-generator',
+      'visual-regression-tester',
+      'vscode-rest-client-generator'
     ]
   },
   security: {
     name: 'Security',
     description: 'Security hardening and privacy protection',
     skills: [
+      'api-security-hardener',
       'auth-security-reviewer',
+      'cors-configuration',
       'dependency-vulnerability-triage',
+      'env-secrets-manager',
       'input-validation-sanitization-auditor',
+      'oauth2-oidc-implementer',
       'pii-redaction-logging-policy-builder',
       'rbac-policy-tester',
       'secrets-scanner',
@@ -189,6 +242,7 @@ const DOMAINS = {
       'load-test-scenario-builder',
       'observability-setup',
       'postmortem-writer',
+      'redis-patterns',
       'structured-logging-standardizer'
     ]
   }
